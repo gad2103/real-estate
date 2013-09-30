@@ -32,6 +32,7 @@ require_once RWMB_DIR . 'meta-box.php';
 include_once(RNR_FUNCTIONS.'/tgm-plugin-activation/class-tgm-plugin-activation.php'); // Plugin Activation Class
 include_once(RNR_FUNCTIONS.'/tgm-plugin-activation/tgm-plugin-activator.php'); // Plugin Activator 
 include_once(RNR_FUNCTIONS.'/portfolio-post-type.php'); // Portfolio Post Type
+include_once(RNR_FUNCTIONS.'/neighborhood-post-type.php'); // Neighborhood Post Type
 include_once RNR_FUNCTIONS.'/tinymce/rnr-shortcodes.php';
 include_once RNR_FUNCTIONS.'/shortcodes.php';
 include_once RNR_FUNCTIONS.'/metaboxes.php';
