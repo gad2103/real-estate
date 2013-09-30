@@ -140,12 +140,15 @@ function rocknrolla_contact_box_shortcode( $atts, $content = null ){
     extract( shortcode_atts(array(
         "email" => '',
         "telephone" => '',
-        "address" => ''
+        "mobile" => '',
+        "address" => '',
     ), $atts) );    
 
 	$rnr_contact_box = '<div class="contact-details">';
 	$rnr_contact_box .= '<h2>'. $email .'</h2>';
-	$rnr_contact_box .= '<h1>'. $telephone .'</h1>';
+	$rnr_contact_box .= '<i class="icon-phone icon-large"></i><h1>'. $telephone .'</h1>';
+    if ( $mobile !== '' && $telephone !== '' ) { $rnr_contact_box .= '<div class="fancy-header"><span>OR</span></div>'; }
+	$rnr_contact_box .= '<i class="icon-mobile-phone icon-large"></i><h1>'. $mobile .'</h1>';
 	$rnr_contact_box .= '<h2>'. $address .'</h2>';
 	$rnr_contact_box .= '</div>';
 
