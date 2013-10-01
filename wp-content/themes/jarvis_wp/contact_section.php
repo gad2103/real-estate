@@ -187,10 +187,10 @@
                       <!-- BEGIN BOTTOM LOGO SECTION -->
                    <div class="contact-image-gallery-wrap">
                     <ul class="contact-image-gallery clearfix">
-                        <li><img src="../wp-content/uploads/2013/09/Luxport_lineart.png"></li>
-                        <li><img src="../wp-content/uploads/2013/09/LREvrt_Blk_LineArt.png"></li>
-                        <li><img src="../wp-content/uploads/2013/09/Christies.png"></li>
                         <li><img src="../wp-content/uploads/2013/09/MarthaTurner.png"></li>
+                        <li><img src="../wp-content/uploads/2013/09/Luxport_lineart.png"></li>
+                        <li><img src="../wp-content/uploads/2013/09/Christies.png"></li>
+                        <li><img src="../wp-content/uploads/2013/09/LREvrt_Blk_LineArt.png"></li>
                     </ul>
                     </div>
                       <!-- END BOTTOM LOGO SECTION -->

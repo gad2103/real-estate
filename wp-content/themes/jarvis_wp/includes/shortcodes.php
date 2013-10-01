@@ -116,7 +116,7 @@ add_shortcode('button', 'rocknrolla_button');
 function rocknrolla_full_width_color( $atts, $content = null ) {
 	
 extract( shortcode_atts(array(
-		"bg_color" => '#f6f6f6',
+		"bg_color" => '#f0f0f0',
 		"color" => '#333333',
 ), $atts) );	
 
