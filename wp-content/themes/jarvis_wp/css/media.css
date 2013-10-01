@@ -344,7 +344,9 @@ a#button-newsletter {
 .subtitle {
     font-size: 18px !important;
 }
-
+.pull-quote.align-left{
+    font-size:20px !important;
+}
 }
  @media only screen and (min-width: 1200px) {
 nav .container {
