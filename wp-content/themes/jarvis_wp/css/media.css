@@ -299,7 +299,11 @@ a#button-newsletter {
 .main-menu-wrapper {
     margin-top:-70px !important;
 }
-
+.home3 .container {
+	width:220px !important;
+	height:220px !important;
+    margin-bottom: 30px;
+}
 }
  @media only screen and (max-width: 479px) {
 	 
