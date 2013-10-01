@@ -145,7 +145,7 @@ nav .container .four.columns {
 	background-image: url(../images/selectmenu.png);
 	background-position: center right;
 	background-repeat: no-repeat;
-	color: inherit;
+	color: #8bacd3;
 	outline: none;
 	width:150px;
 	background-size:30px;
@@ -317,8 +317,9 @@ a#button-newsletter {
     width: 100%;
 }
 .home3 .container {
-	width:280px;
-	height:280px;
+	width:220px !important;
+	height:220px !important;
+    margin-bottom: 30px;
 }
 .home3#home h1 {
 	font-size:15px;
@@ -336,6 +337,12 @@ a#button-newsletter {
 
 .mc4wp-form input {
     width: 92%;
+}
+.main-menu-wrapper {
+    margin-top:-70px !important;
+}
+.subtitle {
+    font-size: 18px !important;
 }
 
 }

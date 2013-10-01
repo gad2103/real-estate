@@ -68,7 +68,7 @@
                                             "featureType": "road.highway",
                                             "elementType": "geometry",
                                             "stylers": [
-                                              { "color": "#678e9b" }
+                                              { "color": "#8bacd3" }
                                             ]
                                           },{
                                             "featureType": "road.arterial",
@@ -184,6 +184,16 @@
                            <div class="clear"></div>
                         </div>
                       <!-- END CONTACT FORM -->
+                      <!-- BEGIN BOTTOM LOGO SECTION -->
+                   <div class="contact-image-gallery-wrap">
+                    <ul class="contact-image-gallery clearfix">
+                        <li><img src="../wp-content/uploads/2013/09/Luxport_lineart.png"></li>
+                        <li><img src="../wp-content/uploads/2013/09/LREvrt_Blk_LineArt.png"></li>
+                        <li><img src="../wp-content/uploads/2013/09/Christies.png"></li>
+                        <li><img src="../wp-content/uploads/2013/09/MarthaTurner.png"></li>
+                    </ul>
+                    </div>
+                      <!-- END BOTTOM LOGO SECTION -->
                </div><!-- END OF SPAN5 -->
 
              </div>
