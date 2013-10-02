@@ -834,9 +834,32 @@ $(window).load(function(){
 		nested: true,
 		indent: '-'
 	}); 
-	
-	
- 
+/*----------------------------------------------------*/
+// MOBILE NAVIGATION SELECT UPDATE ON SCROLL
+/*----------------------------------------------------*/  
+    //get the nav items sans MENU option, loop through and assign waypoint for each
+    //first remove the MENU from the select because it does nothing!
+    var $selectnav = $('.selectnav');
+    $selectnav.children().eq(0).remove();
+    $selectnav.children().each(function(i,v){
+        var attr_arr = $(this).attr('value').split('/');
+        var el_id = attr_arr[attr_arr.length-1];
+        if (el_id === "#header-section") {
+             $(el_id).waypoint(function(){
+                //assuming selectnav1 is the right id might be dangerous DEPENDENCY 
+                $('#selectnav1 option[value="'+window.location.origin+'/'+el_id+'"]').attr('selected','selected');
+            },
+            { offset: function() {return -$(this).height();}
+            });
+        }
+        else {
+            $(el_id).waypoint(function(){
+                //assuming selectnav1 is the right id might be dangerous DEPENDENCY 
+                $('#selectnav1 option[value="'+window.location.origin+'/'+el_id+'"]').attr('selected','selected');
+            });
+        }
+    });
+
 });
 // END OF WINDOW.LOAD FUNCTION
 	

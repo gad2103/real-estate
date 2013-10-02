@@ -87,6 +87,7 @@ add_action('admin_enqueue_scripts', 'rocknrolla_admin_scripts');
 			wp_register_script('shortcodes', RNR_INDEX_JS .'/shortcodes.js', true);	
 			wp_register_script('rnrSupersized', RNR_INDEX_JS .'/supersized.3.2.7.min.js', true);	
 			wp_register_script('rnrSupersizedFun', RNR_INDEX_JS .'/supersized.shutter.min.js', true);
+			wp_register_script('rnrWaypoints', RNR_INDEX_JS .'/waypoints.min.js', true);
 		
 								
 			wp_enqueue_script( 'jquery', false, array(), false, true);
@@ -111,6 +112,7 @@ add_action('admin_enqueue_scripts', 'rocknrolla_admin_scripts');
 			wp_enqueue_script('rnrFitVids');
 			wp_enqueue_script('rnrIsotope');
 			wp_enqueue_script('selectnav');
+			wp_enqueue_script('rnrWaypoints');
 			wp_enqueue_script('rnrscripts');
 			wp_enqueue_script('shortcodes');	
 			
