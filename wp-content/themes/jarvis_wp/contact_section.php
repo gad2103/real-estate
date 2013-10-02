@@ -82,22 +82,10 @@
 
                               };
                               var theMap = new google.maps.Map(document.getElementById("google-map"), myMapOptions);
-                              var image = new google.maps.MarkerImage(
-                                  '<?php echo get_template_directory_uri().'/images/pinMap.png'; ?>',
-                                  new google.maps.Size(92,142),
-                                  new google.maps.Point(0,0),
-                                  new google.maps.Point(8,26)
-                              );
-                              var shadow = new google.maps.MarkerImage(
-                                  '<?php echo get_template_directory_uri().'/images/pinMap-shadow.png'; ?>',
-                                  new google.maps.Size(33,26),
-                                  new google.maps.Point(0,0),
-                                  new google.maps.Point(9,26)
-                              );
                               var marker = new google.maps.Marker({
                                   map: theMap,
-                                  icon: image,
-                                  shadow: shadow,
+                                  icon: '<?php echo get_template_directory_uri().'/images/pinMap.png'; ?>',//image,
+                                  //shadow: shadow,
                                   draggable: false,
                                   animation: google.maps.Animation.DROP,
                                   position: secheltLoc,
