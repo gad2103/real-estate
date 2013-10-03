@@ -366,7 +366,7 @@ function rocknrolla_client($atts, $content = null) {
         "title" => ''
     ), $atts) );  
 
-	return '<a href="'. $url .'" title="'. $title .'" class="clients"><img src="'. $logo .'" alt="'. $title .'"></a>';
+	return '<a href="'. $url .'" title="'. $title .'" class="clients" target="_blank"><img src="'. $logo .'" alt="'. $title .'"></a>';
 
 	return $$rnr_client;
 }
