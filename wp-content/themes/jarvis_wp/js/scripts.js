@@ -440,11 +440,9 @@ $(function(){
 								
 								ajaxLoading = false;
 								
-									page =  $('div#ajaxpage');		
+									//page =  $('div#ajaxpage'); FUCKING UNUSED VARIABLE		
 		
-										hideLoader();	
 										//showProject();				  
-											
 										$(".container").fitVids();	
 													
 										$('.flexslider').flexslider({
@@ -463,6 +461,7 @@ $(function(){
 													}
 													
 											});
+                                            hideLoader();
 								
 						}
 						
