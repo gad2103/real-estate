@@ -384,22 +384,19 @@ $(function(){
 		/* IF URL IS PASTED IN ADDRESS BAR AND REFRESHED */
 		if(pageRefresh == true && hash.substr(0,rootLength) ==  root){	
 
-				$('html,body').stop().animate({scrollTop: (projectContainer.offset().top-20)+'px'},800,'easeOutExpo', function(){											
-					loadProject();																									  
+				$('html,body').stop().animate({scrollTop: (projectContainer.offset().top-20)+'px'},800,'easeOutExpo').promise().done(function(){											
 				});
 				
 		/* CLICKING ON PORTFOLIO GRID OR THROUGH PROJECT NAVIGATION */
 		}else if(pageRefresh == false && hash.substr(0,rootLength) == root){				
-					$('html,body').stop().animate({scrollTop: (projectContainer.offset().top-headerH)+'px'},800,'easeOutExpo', function(){ 		
-		
-					if(content == false){						
+					$('html,body').stop().animate({scrollTop: (projectContainer.offset().top-headerH)+'px'},800,'easeOutExpo').promise().done(function(){ 		
+					//if(content == false){						
 						loadProject();							
-					}else{	
+					/*}else{	
 						projectContainer.animate({opacity:0,height:wrapperHeight},function(){
 						loadProject();
 						});
-					}
-							
+					}*/
 					projectNav.fadeOut('100');
 					exitProject.fadeOut('100');
 							
@@ -446,7 +443,7 @@ $(function(){
 									page =  $('div#ajaxpage');		
 		
 										hideLoader();	
-										showProject();				  
+										//showProject();				  
 											
 										$(".container").fitVids();	
 													
@@ -493,19 +490,20 @@ $(function(){
 		
 		
 		function showProject(){
-			if(content==false){
-				    wrapperHeight = projectContainer.children('div#ajaxpage').outerHeight()+'px';
+            /*if( $(window).width() < 768 ) {
+                wrapperHeight*/
+            wrapperHeight = projectContainer.children('div#ajaxpage').outerHeight()+'px';
+			//if(content==false){
 					projectContainer.animate({opacity:1,height:wrapperHeight}, function(){
 				        $(".container").fitVids();
 						scrollPostition = $('html,body').scrollTop();
 						projectNav.fadeIn();
 						exitProject.fadeIn();
-						content = true;	
+						//content = true;	
 								
 					});
 					
-			}else{
-                    wrapperHeight = projectContainer.children('div#ajaxpage').outerHeight()+'px';
+			/*}else{
 					projectContainer.animate({opacity:1,height:wrapperHeight}, function(){																		  
 					$(".container").fitVids();
 						scrollPostition = $('html,body').scrollTop();
@@ -513,9 +511,7 @@ $(function(){
 						exitProject.fadeIn();
 						
 					});					
-			}
-					
-			
+			}*/
 			projectIndex = portfolioGrid.find('div.portfolio-item.current').index();
 			projectLength = $('div.portfolio-item .portfolio').length-1;
 			

@@ -171,9 +171,9 @@ nav .container .four.columns {
 }
 
 
-.container .columns, .container .column {
+/*.container .columns, .container .column {
 	margin-bottom:40px;
-}
+}*/
 
 nav .container .columns, nav .cotainer .column, #ajaxpage .columns, #ajaxpage .column, .project-media {
 	margin:0;
