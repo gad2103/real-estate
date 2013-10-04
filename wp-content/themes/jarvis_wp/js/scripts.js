@@ -169,7 +169,7 @@ var   window_height = $(window).height(),
 				columnNumb = splitColumns(), 
 				postWidth = Math.floor(winWidth / columnNumb);
 			
-			container.find('.listing-item').each(function () { 
+			container.find('.portfolio-item').each(function () { 
 				$(this).css( { 
 					width : postWidth + 'px' 
 				});
